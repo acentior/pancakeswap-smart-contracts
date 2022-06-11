@@ -11,20 +11,24 @@ const bscTestnet: NetworkUserConfig = {
   url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
   chainId: 97,
   accounts: [process.env.KEY_TESTNET!],
+  gasPrice: 10000000001,
+  from: '0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4'
 };
 
 const bscMainnet: NetworkUserConfig = {
   url: "https://bsc-dataseed.binance.org/",
   chainId: 56,
   accounts: [process.env.KEY_MAINNET!],
+  gasPrice: "auto",
+  from: '0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4'
 };
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {},
-    // testnet: bscTestnet,
-    // mainnet: bscMainnet,
+    testnet: bscTestnet,
+    mainnet: bscMainnet,
   },
   solidity: {
     version: "0.8.4",

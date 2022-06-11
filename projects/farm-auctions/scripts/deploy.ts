@@ -9,9 +9,10 @@ const main = async () => {
   // Compile contracts.
   await run("compile");
   console.log("Compiled contracts...");
-
+  
   // Deploy contracts.
   const FarmAuction = await ethers.getContractFactory("FarmAuction");
+
   const contract = await FarmAuction.deploy(config.Cake[name], config.Operator[name], config.AuctionLength[name]);
 
   // Wait for the contract to be deployed before exiting the script.
