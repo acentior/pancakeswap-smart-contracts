@@ -1,7 +1,8 @@
 import { ethers, network } from "hardhat";
 import { parseEther } from "ethers/lib/utils";
 
-const config = require("../config");
+import config from "../config";
+
 const currentNetwork = network.name;
 
 async function main() {
@@ -18,6 +19,7 @@ async function main() {
   }
 
   console.log("Deploying to network:", currentNetwork);
+  console.log(network);
 
   let rewardTokenAddress: string;
 
@@ -33,7 +35,7 @@ async function main() {
   console.log("Deploying SmartChef...");
 
   const SmartChef = await ethers.getContractFactory("SmartChef");
-
+  
   const smartChef = await SmartChef.deploy(
     config.StakedToken[currentNetwork],
     rewardTokenAddress,

@@ -19,12 +19,30 @@ const bscMainnet: NetworkUserConfig = {
   accounts: [process.env.KEY_MAINNET!],
 };
 
+const exlTestnet: NetworkUserConfig = {
+  url: "https://testnet-rpc.exlscan.com/",
+  chainId: 27082017,
+  accounts: [process.env.KEY_MAINNET!],
+  timeout: 9999999,
+  from: '0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4',
+  gas: 2100000,
+  gasPrice: 8000000000,
+}
+
+const exlMainnet: NetworkUserConfig = {
+  url: "https://rpc.exlscan.com/",
+  chainId: 27082022,
+  accounts: [process.env.KEY_TESTNET!],
+  timeout: 9999999,
+  from: '0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4',
+}
+
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {},
-    // testnet: bscTestnet,
-    // mainnet: bscMainnet,
+    testnet: exlTestnet,
+    mainnet: exlMainnet,
   },
   solidity: {
     version: "0.6.12",

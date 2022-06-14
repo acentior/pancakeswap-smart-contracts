@@ -1,8 +1,8 @@
 export default {
   Admin: {
     // TODO: Change
-    mainnet: "0x0000000000000000000000000000000000000000",
-    testnet: "0x0000000000000000000000000000000000000000",
+    mainnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
+    testnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
   },
   CakeVault: {
     mainnet: "0x038707C9EE8eC68c18CE353519088aE61F7Aa50A",
@@ -10,8 +10,8 @@ export default {
   },
   Treasury: {
     // TODO: Change
-    mainnet: "0x0000000000000000000000000000000000000000",
-    testnet: "0x0000000000000000000000000000000000000000",
+    mainnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
+    testnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
   },
   MasterChef: {
     // Syrup Pool: Cake Pool

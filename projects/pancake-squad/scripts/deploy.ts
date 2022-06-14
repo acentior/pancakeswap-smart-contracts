@@ -24,7 +24,7 @@ const main = async () => {
     }
 
     if (config.Operator[networkName] === ethers.constants.AddressZero) {
-      throw new Error("Missing addresses for Link token");
+      throw new Error("Missing addresses for Operator");
     }
 
     // Compile contracts.

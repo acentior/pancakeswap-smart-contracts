@@ -34,6 +34,7 @@ const exlMainnet: NetworkUserConfig = {
   url: "https://rpc.exlscan.com/",
   chainId: 27082022,
   accounts: [process.env.KEY_TESTNET!],
+  timeout: 9999999,
 }
 
 const config: HardhatUserConfig = {

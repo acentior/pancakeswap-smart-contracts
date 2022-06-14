@@ -6,6 +6,10 @@
   "private": true,
   "scripts": {
     "compile": "npx hardhat compile",
+    "deploy-ifo-deployer:testnet": "npx hardhat run --network testnet scripts/deploy-ifo-deployer.ts",
+    "deploy-ifo-deployer:mainnet": "npx hardhat run --network mainnet scripts/deploy-ifo-deployer.ts",
+    "deploy-ifo-v2:testnet": "npx hardhat run --network testnet scripts/deploy-ifo-v2.ts",
+    "deploy-ifo-v2:mainnet": "npx hardhat run --network mainnet scripts/deploy-ifo-v2.ts",
     "test": "npx hardhat test",
     "test:coverage": "npx hardhat coverage",
     "test:size-contracts": "npx hardhat size-contracts"

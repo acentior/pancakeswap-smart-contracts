@@ -1,6 +1,7 @@
 import { ethers, network } from "hardhat";
 
-const config = require("../config");
+import config from "../config";
+
 const currentNetwork = network.name;
 
 async function main() {
