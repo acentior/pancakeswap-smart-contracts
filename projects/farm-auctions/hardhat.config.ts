@@ -28,6 +28,7 @@ const exlTestnet: NetworkUserConfig = {
   chainId: 27082017,
   accounts: [process.env.KEY_MAINNET!],
   timeout: 9999999,
+  from: "0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4",
 }
 
 const exlMainnet: NetworkUserConfig = {
@@ -35,6 +36,7 @@ const exlMainnet: NetworkUserConfig = {
   chainId: 27082022,
   accounts: [process.env.KEY_TESTNET!],
   timeout: 9999999,
+  from: "0x19c03964f154e70B59A05748f28CBcb3ccF6C4D4",
 }
 
 const config: HardhatUserConfig = {
