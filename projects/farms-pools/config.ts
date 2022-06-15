@@ -6,23 +6,23 @@ export default {
   },
   RewardToken: {
     mainnet: "0x0000000000000000000000000000000000000000",
-    testnet: "0x0000000000000000000000000000000000000000",
+    testnet: "0xb29C916170D01831e34A8eAFFF6B830360E63c30",
   },
   RewardPerBlock: {
-    mainnet: "0.000",
-    testnet: "0.000",
+    mainnet: "0.125",
+    testnet: "0.125",
   },
   StartBlock: {
     mainnet: "0",
     testnet: "0",
   },
   EndBlock: {
-    mainnet: "0",
-    testnet: "0",
+    mainnet: "99999999",
+    testnet: "99999999",
   },
   PoolLimitPerUser: {
-    mainnet: "0",
-    testnet: "0",
+    mainnet: "888",
+    testnet: "888",
   },
   Admin: {
     mainnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
