@@ -1,17 +1,17 @@
 export default {
   Admin: {
     // TODO: needs to be updated before deployment
-    mainnet: "0x0000000000000000000000000000000000000000",
-    testnet: "0x0000000000000000000000000000000000000000",
+    mainnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
+    testnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
   },
   Treasury: {
     // TODO: needs to be updated before deployment
-    mainnet: "0x0000000000000000000000000000000000000000",
-    testnet: "0x0000000000000000000000000000000000000000",
+    mainnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
+    testnet: "0xAAaFbE271944b59Bfc4Af861e32F40C22e837F77",
   },
   WBNB: {
-    mainnet: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-    testnet: "0x094616f0bdfb0b526bd735bf66eca0ad254ca81f",
+    mainnet: "0x0000000000000000000000000000000000000000",
+    testnet: "0xb75E979162827b8e71e8B144C5962d11aA5ce738",
   },
   MinimumAskPrice: {
     // in wei
