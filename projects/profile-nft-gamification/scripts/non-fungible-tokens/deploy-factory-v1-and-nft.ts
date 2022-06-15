@@ -11,7 +11,7 @@ const main = async () => {
   const _cakePerBurn = parseEther("10");
   const _baseURI = "ipfs://";
   const _ipfsHash = "";
-  const _endBlockTime = "";
+  const _endBlockTime = 0;
 
   const BunnyMintingFarm = await ethers.getContractFactory("BunnyMintingFarm");
 

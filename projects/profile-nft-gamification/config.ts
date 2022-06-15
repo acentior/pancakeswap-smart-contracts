@@ -4,8 +4,8 @@ export default {
     testnet: "0x4f3140C74789F1D809420343ea83BcE52B7bbAA5",
   },
   CakeVault: {
-    mainnet: "0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC",
-    testnet: "",
+    mainnet: "0x0000000000000000000000000000000000000000",
+    testnet: "0xEF627CA1a77b8a3b5794b224462b1e3bEd036a1d",
   },
   BunnyFactoryV1: {
     mainnet: "0x7c8b60d2b859a38c8b9b5b6cb4565485cb637c7a",
