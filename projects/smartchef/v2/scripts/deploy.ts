@@ -1,7 +1,8 @@
 import { ethers, network } from "hardhat";
 import { parseEther } from "ethers/lib/utils";
 
-const config = require("../config");
+import config from "../config";
+
 const currentNetwork = network.name;
 
 async function main() {
@@ -19,16 +20,20 @@ async function main() {
 
   console.log("Deploying to network:", currentNetwork);
 
-  let rewardTokenAddress: string;
+  // let rewardTokenAddress: string;
 
-  if (currentNetwork == "testnet") {
-    const MockBEP20 = await ethers.getContractFactory("MockBEP20");
-    const rewardToken = await MockBEP20.deploy("Pool Token 1", "PT1", parseEther("800000"));
-    rewardTokenAddress = rewardToken.address;
-    console.log("RewardToken deployed to:", rewardTokenAddress);
-  } else if (currentNetwork == "mainnet") {
-    rewardTokenAddress = config.RewardToken[currentNetwork];
-  }
+  // if (currentNetwork == "testnet") {
+  //   const MockBEP20 = await ethers.getContractFactory("MockBEP20");
+  //   const rewardToken = await MockBEP20.deploy("Pool Token 1", "PT1", parseEther("800000"));
+  //   rewardTokenAddress = rewardToken.address;
+  //   console.log("RewardToken deployed to:", rewardTokenAddress);
+  // } else if (currentNetwork == "mainnet") {
+  //   rewardTokenAddress = config.RewardToken[currentNetwork];
+  // }
+
+  const rewardTokenAddress = config.RewardToken[currentNetwork];
+  console.log("RewardToken address:", rewardTokenAddress);
+
 
   console.log("Deploying SmartChef...");
 
