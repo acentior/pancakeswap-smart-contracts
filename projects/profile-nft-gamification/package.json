@@ -46,6 +46,6 @@
     "predictions": "1.0.1"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "^3.2.0"
+    "@openzeppelin/contracts": "^4.7.1"
   }
 }
